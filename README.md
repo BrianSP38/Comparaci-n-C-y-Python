@@ -56,7 +56,10 @@ Interpolación cuadrática inversa.
 La idea es aprovechar los métodos que pueden avanzar más rápido cuando las condiciones son buenas, pero mantener la bisección como una alternativa cuando esos pasos no resultan convenientes. 
 Por esta razón, Brent-Dekker suele ser una opción bastante confiable para encontrar raíces dentro de un intervalo conocido.
 
-En el experimento, Newton-Raphson resulta muy eficiente para la función escogida y para el punto inicial utilizado. 
-Brent-Dekker, aunque puede realizar más trabajo en algunos casos, tiene la ventaja de ser más robusto. Esto muestra 
-que el tiempo de ejecución no es el único criterio para elegir un algoritmo; también importa qué tan fácil es garantizar que encuentre la solución.
+**Conclusión**
+
+Con el experimento se pudo comprobar que C tuvo un menor tiempo de ejecución que Python al repetir muchas veces los mismos cálculos.
+Esto se debe principalmente a la forma en que cada lenguaje ejecuta el programa, ya que C se compila antes de ejecutarse, mientras 
+que Python tiene un costo adicional durante la ejecución. Aun así, los dos obtuvieron prácticamente el mismo resultado para la raíz.
+En general, el experimento muestra que la elección depende tanto del lenguaje como de las características del problema que se quiera resolver.
 
