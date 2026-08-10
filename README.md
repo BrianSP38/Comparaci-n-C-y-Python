@@ -20,7 +20,7 @@ como C y uno interpretado como Python.
 | Python + Newton |               2.061 s |
 | Python + Brent  |               4.173 s |
 
-**¿Qué demuestra el experimento?**
+### ¿Qué demuestra el experimento?
 
 Con las pruebas realizadas se puede observar que la diferencia entre C y Python se nota principalmente cuando el mismo cálculo se repite muchas veces. 
 Esto no significa que C sea simplemente “mejor” que Python, sino que cada lenguaje tiene una forma diferente de ejecutar el programa.
@@ -37,7 +37,7 @@ está midiendo en el experimento está principalmente relacionada con el tiempo 
 
 **Comparación de los métodos**
 
-Newton-Raphson utiliza la siguiente expresión:
+**Newton-Raphson utiliza** la siguiente expresión:
 
 $$
 x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}
@@ -47,7 +47,7 @@ Una de sus ventajas es que puede llegar rápidamente a la raíz cuando el valor 
 En el problema utilizado esto funciona bastante bien. El inconveniente es que el método depende de la derivada y de la elección del punto inicial. 
 Si se comienza desde un valor poco adecuado, puede tardar más en converger o incluso no encontrar la raíz.
 
-Brent-Dekker utiliza una combinación de tres estrategias:
+**Brent-Dekker** utiliza una combinación de tres estrategias:
 
 Bisección.
 Método de la secante.
@@ -56,7 +56,7 @@ Interpolación cuadrática inversa.
 La idea es aprovechar los métodos que pueden avanzar más rápido cuando las condiciones son buenas, pero mantener la bisección como una alternativa cuando esos pasos no resultan convenientes. 
 Por esta razón, Brent-Dekker suele ser una opción bastante confiable para encontrar raíces dentro de un intervalo conocido.
 
-**Conclusión**
+### Conclusión
 
 Con el experimento se pudo comprobar que C tuvo un menor tiempo de ejecución que Python al repetir muchas veces los mismos cálculos.
 Esto se debe principalmente a la forma en que cada lenguaje ejecuta el programa, ya que C se compila antes de ejecutarse, mientras 
